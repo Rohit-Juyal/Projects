@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="heading">
+            <h1>Expense Tracker</h1>
+            <h3>Add a new item:</h3>
+        </div>
+        
+        <form id="formContent">
+            <div class="name formLabel">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Where was the expense made for?" required>
+            </div>
+            <div class="date formLabel">
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="amount formLabel">
+                <label for="amount">Amount:</label>
+                <input type="number" name="amount" id="amount" required>
+            </div>
+            <div class="addExpenseBtn formLabel">
+                <button type="submit" id="submitBtn">Add Expense</button>
+            </div>
+        </form>
+    </header>
+
+    <main>
+        <section class="table">
+            <div id="expenseTrackerTable">
+                <table id="tableData">
+                    <tr class="heading">
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </tr>
+                    <!-- <tr id="noExpense">
+                        <td colspan="4">No expenses yet</td>
+                    </tr> -->
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

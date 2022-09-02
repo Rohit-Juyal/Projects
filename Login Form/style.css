@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    font-family:cursive;
+}
+body{
+    font-family:cursive;
+    background-color: lightpink
+}
+
+h1{
+    padding-top: 30px;
+    padding-bottom: 8px;
+    font-size: 45px;
+    margin: 0;
+}
+
+
+button.btn{
+    /* box-sizing: content-box; */
+    width: 360px;
+    height: 60px;
+    font-size: 20px;
+    border-width: 8px;
+    border-color: black;
+    border-style: none outset outset none;
+    border-radius: 35px;
+}
+button.btn:hover{
+    background-color: black;
+    color: white;
+    border-right: none;
+}
+
+
+    
+
+.formContent{
+    width: 360px;
+    height: 60px;
+    background-color: rgb(207, 38, 78);
+    border-radius: 40px;
+    margin: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+label{
+    background-color: rgb(105, 2, 2);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px ;
+    border-radius: inherit;
+}
+label.rememberMe{
+    padding: 10px 60px ;
+}
+#email, #password{
+    
+    padding: 5px 10px;
+    width: 200px;
+    border-radius: inherit;
+    border: none;
+    outline: none;
+}
+
+
+#rememberMe{
+    width: 20px;
+    height: 20px;
+}
+
+#container{
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 730px;
+    border-radius: 20px;
+    background-color: rgb(235, 138, 177);
+    border: 10px black;
+    border-style: none outset outset none;
+}
+#forgotPassword a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+#noAccount{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.theme{
+    border-radius: 20px;
+    background-color: white;
+    height: 30px;
+    width: 100px;
+    margin: auto;
+}
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+
+}
+#yellow{
+    background-color: yellow;
+
+}
+#green{
+    background-color: green;
+
+}
+#pink{
+    background-color: hotpink;
+}
+.theme{
+    margin-top: 15px;
+    display: flex;
+    width: 360px;
+    height: 60px;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.colors{
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 100px;
+}

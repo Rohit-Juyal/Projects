@@ -1,0 +1,43 @@
+#heading{
+    text-align: center;
+}
+h3{
+    color: red;
+}
+#formContent{
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: 20px;
+    width: 700px;
+    margin: auto;
+}
+.formLabel{
+    padding: 10px;
+}
+#name{
+    width: 300px;
+}
+.addExpenseBtn{
+    text-align: center;
+}
+#submitBtn{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 3px solid rgb(237, 116, 116);
+    border-radius: 6px;
+    padding: 3px;
+    cursor: pointer;
+}
+table{
+    width: 743px;
+    margin: auto;
+}
+section{
+    padding-top: 40px;
+}
+table,th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
