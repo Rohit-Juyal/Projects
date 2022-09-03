@@ -15,24 +15,21 @@ h1{
 }
 
 
-button.btn{
-    /* box-sizing: content-box; */
+button.btn{ 
     width: 360px;
     height: 60px;
     font-size: 20px;
-    border-width: 8px;
-    border-color: black;
-    border-style: none outset outset none;
+    border: none;
     border-radius: 35px;
+    box-shadow: 5px 5px black;
+    transition: background-color .6s ease-out;
 }
+
 button.btn:hover{
     background-color: black;
     color: white;
-    border-right: none;
+    box-shadow: none;
 }
-
-
-    
 
 .formContent{
     width: 360px;
@@ -78,8 +75,7 @@ label.rememberMe{
     height: 730px;
     border-radius: 20px;
     background-color: rgb(235, 138, 177);
-    border: 10px black;
-    border-style: none outset outset none;
+    box-shadow: 10px 10px black;
 }
 #forgotPassword a{
     color: black;
@@ -91,6 +87,7 @@ label.rememberMe{
     margin-top: 20px;
     font-size: 20px;
 }
+
 .theme{
     border-radius: 20px;
     background-color: white;
@@ -117,8 +114,8 @@ label.rememberMe{
     background-color: hotpink;
 }
 .theme{
-    margin-top: 15px;
     display: flex;
+    margin-top: 15px;
     width: 360px;
     height: 60px;
     background-color: white;
