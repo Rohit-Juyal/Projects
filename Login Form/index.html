@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div>
         <div id="container">
@@ -15,18 +17,21 @@
             <form action="" id="loginForm">
                 <div class="formContent">
                     <label for="email" class="email formLabel">Email</label>
-                    <input type="email" name="email" id="email" class="email formInput" placeholder="example@gmail.com" required >
+                    <input type="email" name="email" id="email" class="email formInput" placeholder="example@gmail.com"
+                        required>
                 </div>
                 <div class="formContent">
                     <label for="password" class="password formLabel">Password</label>
-                    <input type="password" name="password" id="password" class="formInput" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}" required>
+                    <input type="password" name="password" id="password" class="formInput"
+                        title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}" required>
                 </div>
                 <div class="formContent">
                     <label for="rememberMe" class="rememberMe formLabel">Remember Me</label>
-                    <input type="checkbox" name="rememberMe"class="formInput" id="rememberMe">
+                    <input type="checkbox" name="rememberMe" class="formInput" id="rememberMe">
                 </div>
                 <div id="logIn">
-                    <button  class="btn" id="loginBtn">Log in</button>
+                    <button class="btn" id="loginBtn">Log in</button>
                 </div>
             </form>
             <div id="forgotPassword">
@@ -49,4 +54,5 @@
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>

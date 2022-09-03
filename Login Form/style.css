@@ -1,13 +1,14 @@
-*{
+* {
     box-sizing: border-box;
-    font-family:cursive;
+    font-family: cursive;
 }
-body{
-    font-family:cursive;
+
+body {
+    font-family: cursive;
     background-color: lightpink
 }
 
-h1{
+h1 {
     padding-top: 30px;
     padding-bottom: 8px;
     font-size: 45px;
@@ -15,7 +16,7 @@ h1{
 }
 
 
-button.btn{ 
+button.btn {
     width: 360px;
     height: 60px;
     font-size: 20px;
@@ -25,13 +26,13 @@ button.btn{
     transition: background-color .6s ease-out;
 }
 
-button.btn:hover{
+button.btn:hover {
     background-color: black;
     color: white;
     box-shadow: none;
 }
 
-.formContent{
+.formContent {
     width: 360px;
     height: 60px;
     background-color: rgb(207, 38, 78);
@@ -40,21 +41,25 @@ button.btn:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 }
-label{
+
+label {
     background-color: rgb(105, 2, 2);
     color: white;
     font-weight: bold;
     font-size: 18px;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     border-radius: inherit;
 }
-label.rememberMe{
-    padding: 10px 60px ;
+
+label.rememberMe {
+    padding: 10px 60px;
 }
-#email, #password{
-    
+
+#email,
+#password {
+
     padding: 5px 10px;
     width: 200px;
     border-radius: inherit;
@@ -63,12 +68,12 @@ label.rememberMe{
 }
 
 
-#rememberMe{
+#rememberMe {
     width: 20px;
     height: 20px;
 }
 
-#container{
+#container {
     text-align: center;
     margin: auto;
     width: 400px;
@@ -77,43 +82,51 @@ label.rememberMe{
     background-color: rgb(235, 138, 177);
     box-shadow: 10px 10px black;
 }
-#forgotPassword a{
+
+#forgotPassword a {
     color: black;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
 }
-#noAccount{
+
+#noAccount {
     margin-top: 20px;
     font-size: 20px;
 }
 
-.theme{
+.theme {
     border-radius: 20px;
     background-color: white;
     height: 30px;
     width: 100px;
     margin: auto;
 }
-#red{
+
+#red {
     background-color: red;
 }
-#blue{
+
+#blue {
     background-color: blue;
 
 }
-#yellow{
+
+#yellow {
     background-color: yellow;
 
 }
-#green{
+
+#green {
     background-color: green;
 
 }
-#pink{
+
+#pink {
     background-color: hotpink;
 }
-.theme{
+
+.theme {
     display: flex;
     margin-top: 15px;
     width: 360px;
@@ -123,7 +136,8 @@ label.rememberMe{
     justify-content: space-evenly;
     align-items: center;
 }
-.colors{
+
+.colors {
     border: none;
     height: 25px;
     width: 25px;
