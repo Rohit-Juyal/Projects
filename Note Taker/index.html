@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +8,30 @@
     <title>Note Taker</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <div class="note">
         <h1>Note Taker</h1>
-        <h3>Add a new note:</h3>
-    </header>
-    <form id="note-form">
-        <div class="note-content">
-            <label for="note-input">Note:</label>
-            <textarea name="note-input" id="note-input" cols="40" rows="2" placeholder="Write your text here" spellcheck="true"></textarea>
-        </div>
-        <div class="submit">
-            <input type="submit" id="submit" value="Add Note">
+    </div>
+    <form action="" id="note-form">
+        <div class="note-wrapper">
+            <h3>Add a note:</h3>
+            <input type="text" id="note-title" placeholder="Title of the note" required>
+            <textarea id="note-content" rows="7" placeholder="Write your note here..."></textarea>
+            <input type="submit" value="Add Note" class="btn" id="add-btn">
         </div>
     </form>
-    <main>
-        <section id="get-note-section">
-            <div id="notes">
-                
-            </div>
-        </section>
-    </main>
+    <section class="note-list">
+        <!-- <div class="note-item">
+            <h3>The Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ut, possimus ipsa neque quaerat commodi amet fuga cupiditate ipsum odio blanditiis iusto est itaque dignissimos quam facilis. Maxime, exercitationem sit?</p>
+            <button type="button" class="btn remove-btn">Remove</button>
+        </div> -->
+    </section>
+    
+    <button type="button" class="btn" id="delete-btn">Delete All</button>
+
     <script src="index.js"></script>
 </body>
+
 </html>

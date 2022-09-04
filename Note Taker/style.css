@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --blue: #1c7a9c
+}
+
+.note h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.note-wrapper {
+    margin: 0 3rem;
+    padding: 1.5rem 2rem
+}
+
+.note-wrapper h3 {
+    font-size: 1.4rem;
+    color: var(--blue);
+}
+
+#note-title,
+#note-content {
+    width: 100%;
+    padding: 0.5rem;
+    margin: .5rem 0;
+    font-family: 'Karla', sans-serif;
+}
+
+#note-title:hover,
+#note-content:hover {
+    outline: 1px solid var(--blue);
+}
+
+#note-title:focus,
+#note-content:focus {
+    outline: none;
+}
+
+.btn {
+    margin: .4rem 0;
+    padding: .4rem 1rem;
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    color: white;
+}
+
+.note-list {
+    display: grid;
+    margin: 0 5rem;
+    padding: 2rem 2rem;
+    background-color: var(--blue);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+.note-item {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px rgb(24, 23, 23);
+}
+
+.note-item h3 {
+    margin-bottom: .6rem;
+}
+
+.note-item p {
+    margin-bottom: .6rem;
+}
+
+.remove-btn {
+    background-color: white;
+    color: var(--blue);
+}
+
+#delete-btn {
+    margin: 1.4rem 5rem;
+}
