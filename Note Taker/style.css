@@ -47,22 +47,30 @@ body{
 .btn {
     margin: .4rem 0;
     padding: .4rem 1rem;
+    cursor: pointer;
     background-color: var(--blue);
     border: 2px solid var(--blue);
     color: white;
 }
 
 .note-list {
-    display: grid;
     margin: 0 5rem;
     padding: 2rem 2rem;
     background-color: var(--blue);
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1.5rem;
+    
+}
+
+@media (min-width: 1080px){
+    .note-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
 }
 
 .note-item {
     background-color: white;
+    margin-bottom: 1rem;
     padding: 1rem;
     box-shadow: 3px 3px 5px rgb(24, 23, 23);
 }

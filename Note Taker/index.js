@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
         noteItemTitle.classList.add("note-item-title");
         noteItemTitle.innerHTML = noteTitle.value;
         noteItem.appendChild(noteItemTitle);
-        
+
         const noteItemContent = document.createElement("p");
         noteItemContent.classList.add("note-item-content");
         noteItemContent.innerHTML = noteContent.value;
@@ -32,11 +32,11 @@ window.addEventListener("load", () => {
         noteItem.appendChild(removeBtn);
 
         noteList.appendChild(notes);
-    
+
         removeBtn.addEventListener("click", () => {
             noteItem.remove();
-        });    
-        
+        });
+
         deleteBtn.addEventListener("click", () => {
             notes.remove();
         })
