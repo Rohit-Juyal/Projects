@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Karla', sans-serif;
 }
 
@@ -57,11 +58,11 @@ body{
     margin: 0 5rem;
     padding: 2rem 2rem;
     background-color: var(--blue);
-    
+
 }
 
-@media (min-width: 1080px){
-    .note-list{
+@media (min-width: 1080px) {
+    .note-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
