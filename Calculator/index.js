@@ -1,12 +1,12 @@
 class Calculator {
     constructor(previousOperandTextEl, currentOperandTextEl) {
         this.previousOperandTextEl = previousOperandTextEl;
-        this.currentOperandTextEl = currentOperandTextEl; 
+        this.currentOperandTextEl = currentOperandTextEl;
         this.clear();
     }
     clear() {
         this.currentOperand = "";
-        this.previousOperand ="";
+        this.previousOperand = "";
         this.operation = undefined;
     }
 
@@ -15,29 +15,29 @@ class Calculator {
     }
 
     appendNumber(number) {
-        if(number === "." && this.currentOperand.includes("."))
+        if (number === "." && this.currentOperand.includes("."))
             return;
         this.currentOperand = this.currentOperand.toString() + number.toString();
     }
 
     chooseOperation(operation) {
-        if(this.currentOperand === "")
+        if (this.currentOperand === "")
             return;
-        if(this.previousOperand !== ""){
+        if (this.previousOperand !== "") {
             this.compute();
         }
         this.operation = operation;
         this.previousOperand = this.currentOperand;
         this.currentOperand = "";
-        }
+    }
 
     compute() {
         let computation;
         const prev = parseFloat(this.previousOperand);
         const current = parseFloat(this.currentOperand);
-        if(isNaN(prev) || isNaN(current))
+        if (isNaN(prev) || isNaN(current))
             return;
-        switch(this.operation) {
+        switch (this.operation) {
             case "+":
                 computation = prev + current;
                 break
@@ -63,23 +63,23 @@ class Calculator {
         const integerDigits = parseFloat(stringNumber.split(".")[0]);
         const decimalDigits = stringNumber.split(".")[1];
         let integerDisplay
-        if(isNaN(integerDigits)) {
+        if (isNaN(integerDigits)) {
             integerDisplay = "";
         }
         else {
-            integerDisplay = integerDigits.toLocaleString("en", {maximumFractionDigits: 0})
+            integerDisplay = integerDigits.toLocaleString("en", { maximumFractionDigits: 0 })
         }
-        if(decimalDigits != null) {
+        if (decimalDigits != null) {
             return `${integerDisplay}.${decimalDigits}`
         }
-        else{
+        else {
             return integerDisplay;
         }
     }
 
     updateDisplay() {
         this.currentOperandTextEl.innerText = this.getDisplayNumber(this.currentOperand);
-        if(this.operation != null) {
+        if (this.operation != null) {
             this.previousOperandTextEl.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`;
         }
     }

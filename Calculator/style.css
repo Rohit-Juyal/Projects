@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,6 +17,7 @@ body {
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
+
 .calculator-grid button {
     cursor: pointer;
     font-size: 2rem;
@@ -25,7 +26,7 @@ body {
     background-color: rgb(255, 255, 255, .8);
 }
 
-.calculator-grid button:hover{
+.calculator-grid button:hover {
     background-color: rgb(255, 255, 255, 1);
 }
 
@@ -40,7 +41,7 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: flex-end;
     padding: .6rem;
     word-wrap: break-word;
@@ -51,6 +52,7 @@ body {
     color: rgb(255, 255, 255, .8);
     font-size: 1.5rem;
 }
+
 .output .current-operand {
     color: white;
     font-size: 2.5rem;
