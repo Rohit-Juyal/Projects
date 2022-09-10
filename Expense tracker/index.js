@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
 
     const tableRow = document.createElement("tr");
     tableRow.classList.add("tableRow");
-    
+
     const tableNameData = document.createElement("td");
     tableNameData.innerHTML = nameValue;
 
@@ -24,7 +24,7 @@ form.addEventListener("submit", (e) => {
     tableDateData.innerHTML = dateValue;
 
     const tableamountData = document.createElement("td");
-    tableamountData.innerHTML =`Rs ${amountValue}`;
+    tableamountData.innerHTML = `Rs ${amountValue}`;
 
     const tableDeleteBtn = document.createElement("td");
     const deleteBtn = document.createElement("button");
@@ -32,13 +32,13 @@ form.addEventListener("submit", (e) => {
     deleteBtn.style.cursor = "pointer";
 
     tableDeleteBtn.appendChild(deleteBtn);
-    
+
 
     tableRow.appendChild(tableNameData);
     tableRow.appendChild(tableDateData);
     tableRow.appendChild(tableamountData);
     tableRow.appendChild(tableDeleteBtn);
-    
+
     tableData.appendChild(tableRow);
 
     deleteBtn.addEventListener("click", () => {

@@ -1,26 +1,32 @@
-#heading{
+#heading {
     text-align: center;
 }
-h3{
+
+h3 {
     color: red;
 }
-#formContent{
+
+#formContent {
     border: 2px solid red;
     border-radius: 20px;
     padding: 20px;
     width: 700px;
     margin: auto;
 }
-.formLabel{
+
+.formLabel {
     padding: 10px;
 }
-#name{
+
+#name {
     width: 300px;
 }
-.addExpenseBtn{
+
+.addExpenseBtn {
     text-align: center;
 }
-#submitBtn{
+
+#submitBtn {
     background-color: red;
     color: white;
     font-weight: bold;
@@ -30,14 +36,19 @@ h3{
     padding: 3px;
     cursor: pointer;
 }
-table{
+
+table {
     width: 743px;
     margin: auto;
 }
-section{
+
+section {
     padding-top: 40px;
 }
-table,th, td{
+
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
 }
