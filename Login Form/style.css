@@ -1,10 +1,9 @@
 * {
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: cursive;
     background-color: lightpink
 }
 
@@ -83,6 +82,10 @@ label.rememberMe {
     box-shadow: 10px 10px black;
 }
 
+#forgotPassword {
+    margin-top: .5rem;
+}
+
 #forgotPassword a {
     color: black;
     text-decoration: none;
@@ -91,7 +94,7 @@ label.rememberMe {
 }
 
 #noAccount {
-    margin-top: 20px;
+    margin-top: 2rem;
     font-size: 20px;
 }
 
