@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(240,177,232,1) 0%, rgba(244,192,237,1) 30%, rgba(255,255,255,1) 100%);    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quizContainer {
+    background: white;
+    width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 5px rgb(125, 124, 124);
+    overflow: hidden;
+}
+
+.quizQuestions {
+    padding: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 1rem 0;
+    font-size: 1.35rem;
+}
+
+#btn {
+    background-color: #d636c0;
+    color: white;
+    font-family: inherit;
+    border:none;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
