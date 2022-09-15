@@ -10,7 +10,8 @@ body {
     font-family: 'Nunito', sans-serif;
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(240, 177, 232, 1) 0%, rgba(244, 192, 237, 1) 30%, rgba(255, 255, 255, 1) 100%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
 }
@@ -36,6 +37,10 @@ ul li {
     font-size: 1.35rem;
 }
 
+ul li label, ul li input {
+    cursor: pointer;
+}
+
 #btn {
     background-color: #d636c0;
     color: white;
@@ -44,4 +49,5 @@ ul li {
     padding: 1rem;
     width: 100%;
     font-size: 1.2rem;
+    cursor: pointer;
 }
