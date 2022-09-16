@@ -43,7 +43,8 @@ ul li {
     font-size: 1.35rem;
 }
 
-ul li label, ul li input {
+ul li label,
+ul li input {
     cursor: pointer;
 }
 

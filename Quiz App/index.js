@@ -66,7 +66,7 @@ function getSelected() {
     let answer = undefined;
 
     answerEls.forEach((answerEl) => {
-        if(answerEl.checked) {
+        if (answerEl.checked) {
             answer = answerEl.id;
         }
     });
@@ -83,14 +83,14 @@ function deselectAnswers() {
 submitBtn.addEventListener("click", () => {
 
     const answer = getSelected();
-    if(answer) {
-        if(answer === quizData[currentQuiz].correct) {
+    if (answer) {
+        if (answer === quizData[currentQuiz].correct) {
             score++;
         }
 
         currentQuiz++;
 
-        if(currentQuiz < quizData.length) {
+        if (currentQuiz < quizData.length) {
             loadQuiz();
         }
         else {
@@ -99,7 +99,3 @@ submitBtn.addEventListener("click", () => {
         }
     }
 })
-
-function random(min, max) {
-    return min + Math.floor(Math.random() * (max - min));
-  }
