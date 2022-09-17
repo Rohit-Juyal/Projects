@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #9ba9b2, #eef2f3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 400px;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.searchBtn {
+    background-color: transparent;
+    border: none;
+}
+
+.favImg {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+img {
+    width: 300px;
+}
+
+.favMealContainer {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+.favMeals {
+    display: flex;
+    justify-content: space-around;
+}
+
+.favMeal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
