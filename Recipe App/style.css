@@ -18,7 +18,7 @@ body {
 .container {
     background-color: #fff;
     width: 400px;
-    padding: 1rem;
+    /* padding: 1rem; */
     box-shadow: 0 0 10px 5px #6c6b6b;
 }
 
@@ -26,7 +26,7 @@ nav {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 nav input {
@@ -34,6 +34,7 @@ nav input {
     border: none;
     background-color: #dedfe1;
     border-radius: 2px;
+    font-family: inherit;
 }
 
 nav button {
@@ -46,20 +47,22 @@ nav button {
 }
 
 .favImg {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border-radius: 100%;
     box-shadow: 0 0 10px 3px rgb(243, 218, 218);
 }
 
 img {
     width: 100%;
+    object-fit: cover;
 }
 
 .favMealContainer {
     text-align: center;
-    background-color: orange;
-    padding: .8rem 0;
+    background-color: rgb(255, 166, 0);
+    padding: 1.5rem 0;
+    
 }
 
 .favMeals {
@@ -71,7 +74,6 @@ img {
 .favMeal {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     font-size: .8rem;
 }
@@ -79,6 +81,7 @@ img {
 .favMealHead {
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .new {
@@ -86,7 +89,24 @@ img {
 }
 
 .newMeal {
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    margin: 1.5rem;
+    box-shadow: 0 0 10px 2px rgb(144, 141, 141);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.newMealHeader {
+    position: relative;
+}
+
+.newMealHeader .new{
+    position: absolute;
+    top: 10px;
+    background-color: #fff;
+    padding: 0.25rem 0.8rem;
+    border-radius: 0 5px 5px 0;
+    
 }
 
 .favourite {
@@ -94,7 +114,8 @@ img {
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .favourite button {
@@ -103,4 +124,7 @@ img {
     font-size: 1.7rem;
     cursor: pointer;
     color: #c8c4c4;
+}
+.favourite button:hover {
+    color: #959292;
 }
