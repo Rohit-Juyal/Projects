@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +18,6 @@ body {
 .container {
     background-color: #fff;
     width: 400px;
-    /* padding: 1rem; */
     box-shadow: 0 0 10px 5px #6c6b6b;
 }
 
@@ -62,13 +61,13 @@ img {
     text-align: center;
     background-color: rgb(255, 166, 0);
     padding: 1.5rem 0;
-    
+
 }
 
 .favMeals {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .favMeal {
@@ -89,7 +88,6 @@ img {
 }
 
 .newMeal {
-    /* padding-top: 1rem; */
     margin: 1.5rem;
     box-shadow: 0 0 10px 2px rgb(144, 141, 141);
     border-radius: 4px;
@@ -100,13 +98,13 @@ img {
     position: relative;
 }
 
-.newMealHeader .new{
+.newMealHeader .new {
     position: absolute;
     top: 10px;
     background-color: #fff;
     padding: 0.25rem 0.8rem;
     border-radius: 0 5px 5px 0;
-    
+
 }
 
 .favourite {
@@ -125,6 +123,7 @@ img {
     cursor: pointer;
     color: #c8c4c4;
 }
+
 .favourite button:hover {
     color: #959292;
 }
