@@ -29,11 +29,10 @@ nav {
 }
 
 nav input {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     border: none;
     background-color: #dedfe1;
     border-radius: 2px;
-    font-family: inherit;
 }
 
 nav button {
@@ -46,8 +45,8 @@ nav button {
 }
 
 .favImg {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     border-radius: 100%;
     box-shadow: 0 0 10px 3px rgb(243, 218, 218);
 }
