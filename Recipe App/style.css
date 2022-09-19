@@ -31,6 +31,7 @@ nav {
 nav .searchBar {
     display: flex;
 }
+
 nav div input {
     padding: 0 1rem;
     border: none;
@@ -46,6 +47,7 @@ nav button {
     cursor: pointer;
     color: #848687;
 }
+
 nav button:hover {
     color: #585757;
 }
@@ -97,6 +99,10 @@ img {
     box-shadow: 0 0 10px 2px rgb(144, 141, 141);
     border-radius: 4px;
     overflow: hidden;
+}
+
+.newMeal:hover {
+    box-shadow: 0 0 10px 5px rgb(142, 140, 140);
 }
 
 .newMealHeader {
