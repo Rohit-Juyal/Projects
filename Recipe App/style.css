@@ -37,6 +37,7 @@ nav div input {
     border: none;
     background-color: #dedfe1;
     border-radius: 2px;
+    outline: none;
 }
 
 nav button {
