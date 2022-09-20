@@ -53,11 +53,16 @@ nav button:hover {
     color: #585757;
 }
 
-.favImg {
+.favMeal Img {
     width: 70px;
     height: 70px;
     border-radius: 100%;
     box-shadow: 0 0 10px 3px rgb(243, 218, 218);
+    transition: all .2s ease-in-out;
+}
+
+.favMeal Img:hover {
+    transform: scale(1.1);
 }
 
 img {
@@ -100,10 +105,11 @@ img {
     box-shadow: 0 0 10px 2px rgb(144, 141, 141);
     border-radius: 4px;
     overflow: hidden;
+    transition: all .2s ease-in-out;
 }
 
 .newMeal:hover {
-    box-shadow: 0 0 10px 5px rgb(142, 140, 140);
+    transform: scale(1.02);
 }
 
 .newMealHeader {
