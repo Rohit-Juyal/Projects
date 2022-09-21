@@ -96,6 +96,10 @@ img {
     font-weight: bold;
 }
 
+.favMeal span {
+    padding: .35rem;
+}
+
 .new {
     background-color: rgba(255, 255, 255, 0.471);
 }
