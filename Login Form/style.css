@@ -13,6 +13,7 @@ h1 {
     padding-top: 30px;
     padding-bottom: 8px;
     font-size: 45px;
+    letter-spacing: 5px;
     margin: 0;
 }
 
@@ -20,10 +21,10 @@ button.btn {
     width: 360px;
     height: 60px;
     font-size: 20px;
-    border: none;
+    border: 2px solid black;
     border-radius: 35px;
     box-shadow: 5px 5px black;
-    transition: background-color .7s ease-out;
+    transition: background-color 1s ease-out;
     letter-spacing: 3px;
 }
 
