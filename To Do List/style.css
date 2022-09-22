@@ -11,15 +11,13 @@ body {
     background: linear-gradient(to right, #6441a5, #2a0845);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
 }
 
 h1 {
     background-color: #fff;
     width: 100%;
-    margin: 3rem 0;
+    margin: 5rem 0;
     text-align: center;
     color:#6441a5;
     letter-spacing: 2px;
@@ -32,15 +30,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem;
     box-shadow: 0 0 10px 3px rgb(78, 77, 77);
 }
 
 #new-task-form {
     display: flex;
-    width: 30rem;
+    width: 29rem;
     justify-content: space-around;
     height: 2.2rem;
+    margin-bottom: 3rem;
 }
 
 #new-task-input {
@@ -50,6 +49,7 @@ h1 {
     outline: 1px solid black;
     border: none;
     border-radius: 4px; 
+    font-size: 1rem;
 }
 
 #new-task-input:focus{
@@ -76,11 +76,13 @@ button:active {
     background-color: #2a0845;
 }
 
-.task-list h3 {
-    color: #6441a5;
-    text-align: left;
-    padding: 1rem 0;
+.task-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
+
 
 .task {
     display: flex;
@@ -89,20 +91,21 @@ button:active {
     position: relative;
 }
 .content input{
-   width: 30rem;
+   width: 29rem;
    padding: .6rem 8.5rem .6rem .6rem;
    border: none;
    border-radius:4px;
    background-color: rgba(202, 199, 199, 0.386);
-   margin-bottom: .5rem;
+   margin-top: .5rem;
    outline: none;
+   font-size: 1rem;
 }
 
 .actions {
     display: flex;
     position: absolute;
     right: 0;
-    top:3.5px;  
+    top: 13.5px;  
 }
 
 .actions button {
