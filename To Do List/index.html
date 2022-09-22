@@ -10,22 +10,25 @@
 </head>
 
 <body>
-    <heade>
-        <h1>Task List</h1>
-        <form id="new-task-form">
-            <input type="text" id="new-task-input" placeholder="What do you have planned?">
-            <input type="submit" id="new-task-submit" value="Add Task">
-        </form>
-    </heade>
-
-    <main>
-        <section class="task-list">
-            <h2>Tasks</h2>
-            <div id="tasks">
-
-            </div>
-        </section>
-    </main>
+    <h1>Task List</h1>
+    <div class="container">
+        <header>
+            <form id="new-task-form">
+                <input type="text" id="new-task-input" placeholder="What do you have planned?">
+                <button type="submit" id="new-task-submit" value="Add">Add</button>
+            </form>
+        </header>
+    
+        <main>
+            <section class="task-list">
+                <h3>Tasks</h3>
+                <div id="tasks">
+    
+                </div>
+            </section>
+        </main>
+    </div>
+    
     <script src="index.js"></script>
 </body>
 
