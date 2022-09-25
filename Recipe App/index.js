@@ -19,7 +19,7 @@ async function getRandomMeal() {
 }
 
 async function getMealById(id) {
-    const resp = await fetch("https://www.themealdb.com/api/json/v1/1/lookup.php?i="+id);
+    const resp = await fetch("https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + id);
 
     const respData = await resp.json();
     const meal = respData.meals[0];
@@ -53,10 +53,10 @@ function addMeal(mealData, random = false) {     //  ?
         </div>
     `;
 
-    const btn = meal.querySelector(".favourite .favBtn"); 
+    const btn = meal.querySelector(".favourite .favBtn");
 
     btn.addEventListener("click", () => {
-        if(btn.classList.contains("active")) {
+        if (btn.classList.contains("active")) {
             removeMealLS(mealData.idMeal);
             btn.classList.remove("active");
             btn.style.color = "#c8c4c4";
@@ -66,12 +66,12 @@ function addMeal(mealData, random = false) {     //  ?
             btn.style.color = "red";
         }
 
-        
+
         fetchFavMeals();
     })
 
     meals.appendChild(meal);
-} 
+}
 
 function addMealLS(mealId) {
     const mealIds = getMealsLS();
@@ -96,10 +96,10 @@ async function fetchFavMeals() {
     favMeals.innerHTML = "";
     const mealIds = getMealsLS();
 
-    for(let i = 0; i < mealIds.length; i++) {
+    for (let i = 0; i < mealIds.length; i++) {
         const mealId = mealIds[i];
         const meal = await getMealById(mealId);
-        
+
         addMealFav(meal);
     }
 }
