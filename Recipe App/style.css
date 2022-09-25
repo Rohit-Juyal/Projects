@@ -61,7 +61,7 @@ nav button:hover {
     transition: all .2s ease-in-out;
 }
 
-.favMeal Img:hover {
+.favMeal:hover Img {
     transform: scale(1.1);
 }
 
@@ -81,6 +81,8 @@ img {
 .favMeals {
     display: flex;
     justify-content: space-around;
+    padding: 1rem;
+    overflow: auto;
 
 }
 
@@ -89,7 +91,24 @@ img {
     flex-direction: column;
     align-items: center;
     font-size: .8rem;
+    position: relative;
 }
+
+.favMeal button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: -.5rem;
+    right: -.5rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.favMeal:hover button {
+    opacity: 1;
+}
+
 
 .favMealHead {
     margin-bottom: 1rem;
@@ -99,6 +118,16 @@ img {
 
 .favMeal span {
     padding: .35rem;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90px;
+}
+
+.favMeal:hover span {
+    white-space: normal;
+    overflow: auto;
 }
 
 .new {
