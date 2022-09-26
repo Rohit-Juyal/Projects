@@ -135,18 +135,27 @@ img {
 
 .meals {
     margin: 1.2rem;
-    box-shadow: 0 0 10px 2px rgb(144, 141, 141);
+    /* box-shadow: 0 0 10px 2px rgb(144, 141, 141); */
     border-radius: 4px;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: all .2s ease-in-out;
 }
 
-.meals:hover {
-    transform: scale(1.02);
-}
 
 .newMealHeader {
     position: relative;
+    
+}
+
+.meal {
+    /* border: 2px solid red; */
+    box-shadow: 0 0 10px 2px rgb(144, 141, 141);
+    margin: 1.5rem .5rem ;
+    transition: all .2s ease-in-out;
+}
+
+.meal:hover {
+    transform: scale(1.02);
 }
 
 .newMealHeader .new {
