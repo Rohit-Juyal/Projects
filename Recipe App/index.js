@@ -1,5 +1,9 @@
 const mealsEl = document.getElementById("meals");
 const favMeals = document.getElementById("favMeals");
+const mealPopup = document.getElementById("mealPopup");
+const mealInfoEl = document.getElementById("mealInfo");
+const popupCloseBtn = document.getElementById("closePopup");
+
 const searchTerm = document.getElementById("searchTerm");
 const searchBtn = document.getElementById("searchBtn");
 
@@ -65,12 +69,15 @@ function addMeal(mealData, random = false) {     //  ?
             btn.classList.add("active");
             btn.style.color = "red";
         }
-
-
+        
         fetchFavMeals();
-    })
 
-    meals.appendChild(meal);
+    })
+    meal.addEventListener("click", () => {
+    showMealInfo(mealData);
+})
+
+    mealsEl.appendChild(meal);
 }
 
 function addMealLS(mealId) {
@@ -123,7 +130,49 @@ function addMealFav(mealData) {     //  ?
 
     });
 
+    favMeal.addEventListener("click", () => {
+        showMealInfo(mealData);
+    })
+
     favMeals.appendChild(favMeal);
+}
+
+function showMealInfo(mealData) {
+    // clean it up
+    mealInfoEl.innerHTML = "";
+
+    // update the Meal info
+    const mealEl = document.createElement("div");
+
+    const ingredients = [];
+
+    // get ingredients and measures
+    for(let i = 1; i <= 20; i++) {
+        if (mealData["strIngredient" + i]) {
+            ingredients.push(`${mealData["strIngredient" + i]} - ${mealData["strMeasure" + i]}`
+        )
+        } else {
+            break;
+        }
+    }
+
+    mealEl.innerHTML = `
+    <h1>${mealData.strMeal}</h1>
+    <img src="${mealData.strMealThumb}" alt="${mealData.strMeal}">
+    <p>${mealData.strInstructions}</p>
+    <h3>Ingredients:</h3>
+        <ul>
+            ${ingredients.map((ing) => `
+            <li>${ing}</li>
+            `).join("")}
+        </ul>
+        `
+
+    mealInfoEl.appendChild(mealEl);
+
+    // show the popup
+
+    mealPopup.classList.remove("hidden")
 }
 
 searchBtn.addEventListener("click", async () => {
@@ -138,4 +187,8 @@ searchBtn.addEventListener("click", async () => {
     meals.forEach((meal) => {
         addMeal(meal);
     })
+})
+
+popupCloseBtn.addEventListener("click", () => {
+    mealPopup.classList.add("hidden");
 })
