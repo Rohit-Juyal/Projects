@@ -78,7 +78,12 @@ nav button:hover {
     justify-content: space-around;
     padding: 1rem;
     overflow: auto;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
     
+}
+.favMeals::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 .favMeal {
@@ -116,12 +121,12 @@ nav button:hover {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 90px;
+    width: 100px;
 }
 
 .favMeal:hover span {
     white-space: normal;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .new {
@@ -218,7 +223,14 @@ img {
     max-height: 100vh;
     max-width: 600px;
     width: 100%;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    
 }
+.popup::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 
 .popup .closePopup {
     background-color: transparent;
@@ -226,10 +238,11 @@ img {
     cursor: pointer;
     font-size: 1.5rem;
     position: absolute;
-    top: .5rem;
+    top: .3rem;
     right: .7rem;
 }
 
 .mealInfo h1 {
     text-align: center;
+    padding: 1rem;
 }
