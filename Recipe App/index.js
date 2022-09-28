@@ -49,7 +49,7 @@ function addMeal(mealData, random = false) {     //  ?
         <div class="newMealHeader">
             ${random ? `<div class="new">New in Menu</div>` : ""}
             <img src="${mealData.strMealThumb}"
-                alt="${mealData.strMeal}" id="img">
+                alt="${mealData.strMeal}" class="newMenuImg">
         </div>
         <div class="favourite">
             <div id="foodName">${mealData.strMeal}</div>
@@ -68,14 +68,23 @@ function addMeal(mealData, random = false) {     //  ?
             addMealLS(mealData.idMeal);
             btn.classList.add("active");
             btn.style.color = "red";
+            location.reload();
         }
-        
+
         fetchFavMeals();
 
     })
-    meal.addEventListener("click", () => {
-    showMealInfo(mealData);
-})
+
+    newMenuImg = meal.querySelector(".newMenuImg");
+
+    newMenuImg.addEventListener("click", () => {
+        showMealInfo(mealData);
+    })
+
+
+    // meal.addEventListener("click", () => {
+    //     showMealInfo(mealData);
+    // })
 
     mealsEl.appendChild(meal);
 }
@@ -130,7 +139,13 @@ function addMealFav(mealData) {     //  ?
 
     });
 
-    favMeal.addEventListener("click", () => {
+    // favMeal.addEventListener("click", () => {
+    //     showMealInfo(mealData);
+    // })
+
+    const favbtn = favMeal.querySelector(".favImg");
+
+    favbtn.addEventListener("click", () => {
         showMealInfo(mealData);
     })
 
@@ -147,10 +162,10 @@ function showMealInfo(mealData) {
     const ingredients = [];
 
     // get ingredients and measures
-    for(let i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 20; i++) {
         if (mealData["strIngredient" + i]) {
             ingredients.push(`${mealData["strIngredient" + i]} - ${mealData["strMeasure" + i]}`
-        )
+            )
         } else {
             break;
         }
