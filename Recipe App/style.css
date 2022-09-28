@@ -70,7 +70,7 @@ nav button:hover {
     text-align: center;
     background-color: rgb(255, 166, 0);
     padding: 1rem 0;
-    
+
 }
 
 .favMeals {
@@ -78,12 +78,13 @@ nav button:hover {
     justify-content: space-around;
     padding: 1rem;
     overflow: auto;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-    
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+
 }
-.favMeals::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+
+.favMeals::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 .favMeal {
@@ -133,25 +134,15 @@ nav button:hover {
     background-color: rgba(255, 255, 255, 0.471);
 }
 
-/* .meals {
-    margin: 1.2rem;
-    box-shadow: 0 0 10px 2px rgb(144, 141, 141);
-    border-radius: 4px;
-    overflow: hidden;
-    transition: all .2s ease-in-out;
-} */
-
-
 .newMealHeader {
     position: relative;
-    
+
 }
 
 .meal {
-    /* border: 2px solid red; */
     border-radius: .5rem;
     box-shadow: 0 0 10px 2px rgb(144, 141, 141);
-    margin: 1.5rem ;
+    margin: 1.5rem;
     overflow: hidden;
     transition: all .2s ease-in-out;
 }
@@ -166,7 +157,7 @@ nav button:hover {
     background-color: #fff;
     padding: 0.25rem 0.8rem;
     border-radius: 0 5px 5px 0;
-    
+
 }
 
 img {
@@ -203,7 +194,7 @@ img {
     align-items: center;
     justify-content: center;
     position: fixed;
-    left:0;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
@@ -223,12 +214,13 @@ img {
     max-height: 100vh;
     max-width: 600px;
     width: 100%;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-    
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+
 }
-.popup::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+
+.popup::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 
