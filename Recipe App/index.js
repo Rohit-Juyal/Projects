@@ -190,6 +190,22 @@ function showMealInfo(mealData) {
     mealPopup.classList.remove("hidden")
 }
 
+
+const node = document.querySelector(".input");
+node.addEventListener("keyup", async (event) => {
+    if (event.key === "Enter") {
+    mealsEl.innerHTML = "";
+
+    const search = searchTerm.value;
+
+    const meals = await getMealBySearch(search);
+
+    meals.forEach((meal) => {
+        addMeal(meal);
+    })
+    }
+});
+
 searchBtn.addEventListener("click", async () => {
 
     // clean container 
