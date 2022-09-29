@@ -194,15 +194,15 @@ function showMealInfo(mealData) {
 const node = document.querySelector(".input");
 node.addEventListener("keyup", async (event) => {
     if (event.key === "Enter") {
-    mealsEl.innerHTML = "";
+        mealsEl.innerHTML = "";
 
-    const search = searchTerm.value;
+        const search = searchTerm.value;
 
-    const meals = await getMealBySearch(search);
+        const meals = await getMealBySearch(search);
 
-    meals.forEach((meal) => {
-        addMeal(meal);
-    })
+        meals.forEach((meal) => {
+            addMeal(meal);
+        })
     }
 });
 
