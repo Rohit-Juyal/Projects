@@ -62,3 +62,15 @@ button {
 #btn:hover {
     background-color: #b238a2;
 }
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.quizContainer .img {
+    display: flex;
+    justify-content: center;
+}
+
+
