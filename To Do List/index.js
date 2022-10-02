@@ -54,16 +54,21 @@ window.addEventListener("load", () => {
             if (task_edit_el.innerHTML == "Edit") {
                 task_input_el.removeAttribute("readonly");
                 task_input_el.focus();
-                task_edit_el.innerHTML = "Save"
+                task_input_el.style.outline ="1px solid rgb(70, 13, 117)"
+                task_edit_el.innerHTML = "Save";
             }
             else {
                 task_input_el.setAttribute("readonly", "readonly");
                 task_edit_el.innerHTML = "Edit";
+                task_input_el.style.outline ="none";
             }
         })
 
         task_delete_el.addEventListener("click", () => {
             list_el.removeChild(task_el);
-        })
-    })
-})
+        });
+
+
+    });
+});
+
