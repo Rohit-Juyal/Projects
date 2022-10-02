@@ -20,7 +20,7 @@ h1 {
     margin: 5rem 0;
     text-align: center;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     transition: all .6s ease-in-out;
 }
 
@@ -52,14 +52,15 @@ h1:hover {
     width: 100%;
     padding: .5rem;
     margin-right: 1rem;
-    outline: 1px solid black;
+    outline: 1px solid rgb(224, 224, 224);
+    background-color: rgba(232, 230, 230, 0.452);
     border: none;
     border-radius: 4px;
     font-size: 1rem;
 }
 
 #new-task-input:focus {
-    outline: 2px solid #6441a5;
+    outline: 1px solid #6441a5;
 }
 
 button {
@@ -109,11 +110,13 @@ button:active {
     font-size: 1rem;
 }
 
+
 .actions {
     display: flex;
     position: absolute;
     right: 0;
     top: 13.5px;
+    background-color: rgba(143, 139, 139, 0.5);
 }
 
 .actions button {
