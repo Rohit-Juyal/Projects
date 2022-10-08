@@ -25,7 +25,7 @@ h1 {
 
 h1:hover {
     background-color: white;
-    color:#6441a5
+    color: #6441a5
 }
 
 .container {
@@ -132,6 +132,10 @@ button:active {
 
 .actions button.delete:active {
     background-color: rgb(200, 8, 8);
+}
+
+.task input {
+    cursor: grab;
 }
 
 .task input.completed {
