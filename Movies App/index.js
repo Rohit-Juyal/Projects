@@ -17,7 +17,6 @@ async function getMovies(url) {
     showMovies(respData.results) ;
 }
 
-
 function showMovies(movies) {
 
     main.innerHTML = ""
@@ -31,6 +30,10 @@ function showMovies(movies) {
             <div class="movie-info">
                 <h3>${movie.title}</h3>
                 <span class="${classByVoteAverage(movie.vote_average)}">${movie.vote_average}</span>
+            </div>
+            <div class="overview">
+                <h4>Overview</h4>
+                <div class="content">${movie.overview}</div>
             </div>`;
         
         main.appendChild(movieEl);
@@ -57,5 +60,4 @@ form.addEventListener("submit", (e) => {
 
     search.value = ""
     search.placeholder = "Search..."
-
 })
