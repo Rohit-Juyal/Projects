@@ -22,7 +22,7 @@ body {
 .movie {
     display: inline;
     background-color: rgb(39, 39, 92);
-    width: 210px;
+    width: 220px;
     color: rgba(255, 252, 252, 0.832);
     border-radius: 4px 4px 0 0;
     overflow: hidden;
@@ -123,6 +123,8 @@ body {
     color: rgba(255, 252, 252, 0.832);
     padding: .7rem;
     bottom: 0;
+    right: 0;
+    left: 0;
     transform: translateY(110%);
     transition: transform .3s ease-in-out;
 }
