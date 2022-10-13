@@ -38,6 +38,7 @@ function createUserCard(user) {
                 <li>${user.public_repos}<span>Repos</span></li>
             </ul>
             <div class="repos">
+            <div class="head">Repos:</div>
             </div>
             </div>
         </div>
