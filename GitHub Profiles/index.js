@@ -44,7 +44,7 @@ function createUserCard(user) {
         </div>
     `
     main.innerHTML = card;
-    
+
 }
 
 function createRepoForCard(repos) {
@@ -66,7 +66,7 @@ form.addEventListener("submit", e => {
 
     const user = search.value;
 
-    if(user) {
+    if (user) {
         getUser(user);
         search.value = "";
     }
