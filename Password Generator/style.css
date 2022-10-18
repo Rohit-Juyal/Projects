@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(218, 10, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.pw-container {
+    background-color: rgb(151, 7, 69);
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 0 10px 5px rgba(43, 42, 42, 0.67);
+}
+
+
+.password {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(75, 3, 34);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .7rem;
+    font-size: 1.1rem;
+}
+
+.password .copy {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    background-color: rgb(51, 12, 29);
+    color: white;
+    border: none;
+    padding: .5rem .7rem;
+    font-size: 1rem;
+    font-weight: 700;
+    opacity: 0;
+    cursor: pointer;
+    transform: translatex(20%);
+    transition: transform .2s ease-in-out;
+}
+
+.copy:hover {
+    background-color: rgb(26, 4, 13);
+}
+
+
+.password:hover .copy {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.form {
+    padding: 1rem 0;
+}
+
+.form-content {
+    padding: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-content input[type="checkbox"] {
+    width: 1.3rem;
+}
+
+.form-content input[type="number"] {
+    width: 5rem;
+    font-size: .9rem;
+}
+
+#getpass {
+    width: 100%;
+    height: 40px;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: rgb(51, 12, 29);
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+#getpass:hover {
+    background-color: rgb(26, 4, 13);
+    transform: scale(1.02)  translateY(-3%);
+}
+
+button:active {
+    outline: 1px solid gray;
+}
