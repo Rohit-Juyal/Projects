@@ -6,21 +6,30 @@ const numbersEl = document.getElementById("number");
 const lowercaseEl = document.getElementById("lowercase");
 const uppercaseEl = document.getElementById("uppercase");
 const getpassEl = document.getElementById("getpass");
+const sliderValue = document.getElementById("slidervalue");
 
 const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lower = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const symbols = "#@&!()^%+=_$*/";
 
+
+lengthEl.oninput = function() {
+    sliderValue.innerText = this.value
+}
+
 function getUppercase() {
     return upper[Math.floor(Math.random() * upper.length)]
 }
+
 function getLowercase() {
     return lower[Math.floor(Math.random() * lower.length)]
 }
+
 function getnumber() {
     return numbers[Math.floor(Math.random() * numbers.length)]
 }
+
 function getSymbol() {
     return symbols[Math.floor(Math.random() * symbols.length)]
 }
@@ -28,33 +37,37 @@ function getSymbol() {
 function generatePassword() {
     length = lengthEl.value;
     
-    password = "";
+    let pass = [];
 
     if(symbolEl.checked) {
-        password += getSymbol();
+        pass.push(getSymbol())
     }
 
     if(numbersEl.checked) {
-        password += getnumber();
+        pass.push(getnumber())
     }
 
     if(lowercaseEl.checked) {
-        password += getLowercase();
+        pass.push(getLowercase())
     }
 
     if(uppercaseEl.checked) {
-        password += getUppercase();
+        pass.push(getUppercase())
     }
+
+    let password = ""
+    password = pass[Math.floor(Math.random() * pass.length)];
 
     for(let i = password.length; i < length; i++) {
         const x = generateX()
         password += x;
     }
-
+    
     passEl.innerText = password;
-
-
-
+    
+    if(!password) {
+        window.alert("Checkbox not checked!")
+    }
 }
 
 function generateX() {
@@ -85,6 +98,7 @@ function generateX() {
 
 getpassEl.addEventListener("click", generatePassword);
 
+
 copyEl.addEventListener("click", () => {
     const textarea = document.createElement("textarea");
     const password = pass.innerText;
@@ -98,5 +112,5 @@ copyEl.addEventListener("click", () => {
     textarea.select();
     document.execCommand("copy");
     textarea.remove();
-    alert("Password copied");
+    alert("Copied to clipboard!");
 })
