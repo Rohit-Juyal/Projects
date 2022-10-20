@@ -6,13 +6,14 @@ const updateSize = document.getElementById("updateSize");
 const colorEl = document.getElementById("color");
 const clear = document.getElementById("clear");
 
-let size = 10 ;
+let size = 2;
 
 let x = undefined;
 let y = undefined;
 
 let isPressed = false;
 let color = "black"
+
 
 canvas.addEventListener("mousedown", (e) => {
     isPressed = true;
@@ -22,7 +23,7 @@ canvas.addEventListener("mousedown", (e) => {
 
 canvas.addEventListener("mouseup", () => {
     isPressed = false;
-
+    
     x = undefined;
     y = undefined
 })
@@ -35,6 +36,11 @@ canvas.addEventListener("mousemove", (e) => {
         x = x1;
         y = y1;
     }
+})
+
+document.body.addEventListener("mouseup", (e) => {
+    console.log(e);
+    isPressed = false;
 })
 
 function drawCircle(x, y) {
@@ -54,10 +60,9 @@ function drawLine(x, y, x1, y1) {
     ctx.stroke();
 }
 
-// drawLine(100,100,300,300)
 
 increaseBtn.addEventListener("click", () => {
-    size = size + 5;
+    size = size + 2;
 
     if (size > 40) {
         size = 40;
@@ -67,16 +72,16 @@ increaseBtn.addEventListener("click", () => {
 })
 
 decreaseBtn.addEventListener("click", () => {
-    size = size - 5;
-    if (size < 5) {
-        size = 5;
+    size = size - 2;
+    if (size < 2) {
+        size = 2;
     }
 
     updateSizeOnScreen()
 })
 
 function updateSizeOnScreen() {
-    updateSize.innerHTML = size
+    updateSize.innerText = size
 }
 
 colorEl.addEventListener("change", (e) => {
