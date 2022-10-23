@@ -47,8 +47,6 @@ form.addEventListener("submit", (e) => {
         if(city) {
             getWeather(city);
         }
-        
-
         e.preventDefault();
 
         
